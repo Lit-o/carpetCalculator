@@ -1,0 +1,253 @@
+@charset "UTF-8";
+body {
+  font-family: arial;
+  font-weight: 300; 
+  color:#333;
+}
+
+/*Преднастройки*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.vis-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin-top: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect 0 0 0 0;
+  overflow: hidden;
+  z-index: -1; }
+
+button {
+  border: 0px solid #000;
+  background-color: inherit; }
+
+
+
+@-webkit-keyframes shine {
+  0% {
+    left: -140px; }
+  100% {
+    left: 760px; } }
+
+@keyframes shine {
+  0% {
+    left: -140px; }
+  100% {
+    left: 760px; } }
+
+.link-button-top {
+  position: absolute;
+  z-index: 4;
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  width: 223px;
+  height: 44px;
+  padding-top: 11px;
+  text-align: center;
+  vertical-align: middle;
+  /*line-height: 56px;*/
+  color: #fff;
+  border-radius: 28px;
+  -webkit-transition: all 0.5s ease, color 0.1s ease;
+  -o-transition: all 0.5s ease, color 0.1s ease;
+  transition: all 0.5s ease, color 0.1s ease;
+  background-color: transparent;
+  border: 2px solid #009cff;
+  /*border-radius: 28px;*/ }
+  .link-button-top:hover {
+    color: #fff;
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    background-color: #009cff; }
+
+
+.wellcome__button-desc {
+  position: absolute;
+  width: 360px;
+  text-align: center;
+  margin-top: 0px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff; }
+  .wellcome__button-desc b::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 45px;
+    display: block;
+    width: 18px;
+    height: 12px;
+    background-image: url(../img/much.png);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  
+
+/*-------Калькулятор и все, что ему нужно-----------*/
+
+body {
+  background-color: rgba(204, 255, 242, 0.3); 
+  /*display: flex;*/
+}
+.calc {
+  margin: 80px auto;
+  padding: 20px;
+  width: 55%;
+  height: 250px;
+
+  border-radius: 5px;
+  background-color: rgb(204, 255, 221); 
+  box-shadow: 0px 0px 40px #333;
+}
+
+.calc_title {
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  padding-bottom: 36px; }
+
+.calc__input-cont {
+  display: inline-block;
+  padding-right: 10px; }
+
+.calc__output-cont {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top; }
+
+.calc__input-cont p {
+  display: inline-block;
+  width: 216px;
+  padding-bottom: 28px; }
+
+.calc__input-cont:first-child p {
+  margin-right: 15px; }
+
+.input-value {
+  width: 216px;
+  padding-right: 0px; }
+
+.input-value:first-child {
+  margin-right: 15px; }
+
+.output-cont__first-line {
+  padding-top: 0px;
+  padding-bottom: 17px;
+  text-align: right; }
+
+.sale-desc {
+  font-weight: 600; }
+
+.output-cont__first-line p {
+  display: inline-block;
+  min-width: 115px;
+  border-radius: 5px;
+  padding: 16px 8px;
+  margin-left: 8px;
+  margin-right: 9px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 7px -2px #333;
+  box-shadow: inset 0 0 7px -2px #333;
+  font-family: calibri, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #009cff; }
+
+.output-cont__second-line {
+  margin-bottom: 10px; }
+
+.output-cont__third-line {
+  vertical-align: top; }
+
+.output-cont__third-line .much-block {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-width: 152px;
+  border-radius: 5px;
+  padding: 16px 8px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 10px -4px #333;
+  box-shadow: inset 0 0 10px -4px #333;
+  font-family: calibri, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #009cff; }
+
+.how-much-left-block {
+  display: inline-block;
+  text-align: center;
+  min-width: 330px;
+  border-radius: 5px;
+  padding: 16px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 10px -4px #333;
+  box-shadow: inset 0 0 10px -4px #333;
+  font-family: calibri, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333; }
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+
+input[type='range'] {
+  overflow: hidden;
+  width: 216px;
+  -webkit-appearance: none;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 3px 17px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 17px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 9px; }
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 18px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px; }
+
+input[type='range']::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  cursor: ew-resize;
+  /*background: rgb(8,96,153);*/
+  border-radius: 11px;
+  background-image: url(../img/range.png);
+  background-size: cover;
+  -webkit-box-shadow: -228px 5px 5px 216px #6ac5ff;
+  box-shadow: -228px 5px 5px 216px #6ac5ff; }
+
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; }
+
+input[type="range"]::-moz-range-track {
+  background-color: #9a905d; }
+
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7; }
+
+input[type="range"]::-ms-fill-upper {
+  background-color: #9a905d; }
+
