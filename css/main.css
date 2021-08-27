@@ -174,7 +174,9 @@ body {
   color: #009cff; }
 
 .output-cont__second-line {
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+  margin-top: 20px;
+}
 
 .output-cont__third-line {
   vertical-align: top; }
